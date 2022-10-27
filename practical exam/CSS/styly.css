@@ -27,13 +27,16 @@ a{
     margin: 20px;
     color: black;
 }
-header:after{
+.nav-content :after{
+    content: '';
     width: 48px;
     height: 48px;
     left: 1650px;
     top: 30px;
+    right: 20px;
     background-image: url(/img/image\ 3.png);
     background-size: cover;
+    background-position: end;
     background-attachment: fixed;  
 }
 .hero-img{
@@ -45,8 +48,9 @@ header:after{
     background-position: center center;
 }
 .hero-content h1{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
+    padding: 300px;
 }
 /*hightlight-section*/
 .col-2{
@@ -71,6 +75,17 @@ header:after{
     font-weight: 600;
     padding: 1.5rem;
 }
+/*new-galaxy*/
+.col-4{
+    flex: 1 200px;
+    width: calc(100%/4);
+}
+.new-galaxy .col-4 img{
+    position: relative;
+}
+.bg-blue img{
+    height: 480px;
+}
 .align-right h3{
     align-self: flex-end;
 }
@@ -85,17 +100,6 @@ header:after{
     color: white;
 }
 
-
-.col-4{
-    flex: 1 200px;
-    width: calc(100%/4);
-}
-.new-galaxy .col-4 img{
-    position: relative;
-}
-.bg-blue img{
-    height: 480px;
-}
 .col-4 h3{
     font-size: 1.5rem;
     font-weight: 600;
